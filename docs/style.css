@@ -2,4 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  color: var(--white);
+}
+
+body {
+  --black: #222020;
+  --white: #dae0f2;
+
+  background-color: var(--black);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 4rem
+}
+
+header {
+  padding: 2rem 4rem;
+}
+
+nav {
+  display: flex;
+  align-item: flex-start;
+  flex-direction: column;
 }
