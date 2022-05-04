@@ -19,24 +19,50 @@
   <main>
     <aside>
       <nav>
-        <a href="#">Overview</a>
-        <a href="#">Installation</a>
-        <a href="#">Usage</a>
-        <a href="#">CLI Parameters</a>
+        <ol>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Installation</a></li>
+          <li><a href="#">Usage</a></li>
+          <li><a href="#">CLI Parameters</a></li>
+        </ol>
       </nav>
     </aside>
     <article>
       <section>
         <h3>Overview</h3>
+        <p><strong>Serf</strong> is a very minimal local web server for your terminal. </p>
       </section>
       <section>
         <h3>Installation</h3>
+        <p>Coming Soon...</p>
       </section>
       <section>
         <h3>Usage</h3>
+        <p></p>
+        <pre><code>serf -port=8080 -path="./docs"</code></pre>
       </section>
       <section>
         <h3>CLI Parameters</h3>
+        <table data-table-theme="dark">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>port</td>
+            <td>int</td>
+            <td>3000</td>
+            <td>The port to serve to</td>
+          </tr>
+          <tr>
+            <td>path</td>
+            <td>string</td>
+            <td>"./"</td>
+            <td>A relative or absolute path to the directory to be served</td>
+          </tr>
+        </table> 
       </section>
     </article>
   </main>
