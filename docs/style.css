@@ -18,13 +18,15 @@ main {
   display: flex;
   align-items: flex-start;
   gap: 3rem;
-  /* padding: 0 4rem */
+  max-width: 100ch;
+  margin: auto;
 }
 
 header {
   padding: 2rem 0;
-  /* margin: 4rem; */
   border-bottom: 2px solid var(--white);
+  max-width: 100ch;
+  margin: auto;
   margin-bottom: 2rem;
 }
 
@@ -95,4 +97,11 @@ table td {
 [data-table-theme*=dark] td {
   padding: .5em;
   border: 1px solid grey;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
 }
