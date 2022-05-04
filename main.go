@@ -14,7 +14,7 @@ func main() {
 	var address string = fmt.Sprintf(":%s", *port)
 
 	http.Handle("/", http.FileServer(http.Dir(*path)))
-	alert := fmt.Sprintf("Serving Assets from %s at %s", *path, *port)
+	alert := fmt.Sprintf("Serving Assets from %s at http://localhost:%s", *path, *port)
 	fmt.Println(alert)
 	log.Fatal(http.ListenAndServe(address, nil))
 }
